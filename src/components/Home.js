@@ -1,83 +1,19 @@
 import React from 'react'
-import { Navbar  , Container , Row ,Col ,Card ,Button ,CardGroup} from 'react-bootstrap'
-import {  BrowserRouter } from 'react-router-dom'
-import { HashLink as Link } from 'react-router-hash-link'
+import { Container , Row ,Col ,Card ,Button ,CardGroup} from 'react-bootstrap'
 
-import logo from './images/loogo.PNG'
 import video from './video/Dummy.MP4'
 import img1 from './images/ecosystem.png'
 import img2 from './images/planet-earth.png'
 import img3 from './images/Hydrogen.jpeg'
 import img4 from './images/Hydrogen2.JPG'
+import Footer from './Footer'
 
 
 
 export const Home = () => {
   return (
       <>
-    <Navbar class = "navbar"  >
-     
-     <BrowserRouter>
- <nav className="navbar   ">
-   <div className="container ">
-     <a className="navbar-brand img" href="#">
-        <img className='logo' 
-         src={logo} alt= "logo"
-        
-         >
-           </img></a>
-   
-     
-     <div className="navbar_div" id="navbarSupportedContent">
-       <ul className="navbar-nav ">
-         <li className="nav-item">
-         <Link   to ='#' className='nav-link active' > Home </Link>
-         </li>
-         <li className="nav-item">
-         
-           <Link   to ='#dapp' className='nav-link active' >dapp </Link>
-         
-         </li>
- 
-         <li className="nav-item">
-     
-           <Link to ='#'   className='nav-link active'> Seller </Link>
-        
-                 </li>
-         <li>
-         
-           <Link   to ='#' className='nav-link active' >Buyer </Link>
-         
-         </li>
-         <li>
-         
-           <Link   to ='#' className='nav-link active' >Partners </Link>
-         
-         </li>
-         <li>
-         
-         <Link   to ='#' className='nav-link active' >About us </Link>
-       
-       </li>
-       <li>
-         
-         <Link   to ='#' className='nav-link active' >Contact </Link>
-       
-       </li>
-       </ul>
-     
-     </div>
-   </div>
- </nav>
- <div>
- 
- </div>
- 
- 
- </BrowserRouter>
- 
-          </Navbar>
-        
+   <div id='home_id'> 
    <section >
      <div >
      <Container >
@@ -274,33 +210,12 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
 
         </section>
 
+     <Footer/>
 
-
-        <footer className=' footer  ' >
-
-         <p>2021 © REgeneration Energy  <br/>
-         All rights reserved
-         </p>
-
-         <div className='d-grid gap-3' >
-         <a src = ''  href="#"> Home </a>
-         <a src = '' href="#"> About us</a>
-         <a src = ''href="#" > contact</a>
-         </div>
-
-         <div className='d-grid gap-3' >
-         <a src = ''  href="#"> Twitter </a>
-         <a src = ''href="#" > Linkedin</a>
-         </div>
-
-         <div className='d-grid gap-3' >
-         <a src = '' href="#" > Privacy Policy </a>
-         <a src = ''  href="#"> Terms Of service</a>
-         </div>
-         
+       
+   </div>
         
-        
-        </footer>
+  
           
     </>
   )
