@@ -1,39 +1,144 @@
 
-.App {
-  text-align: center;
+ *{
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+ }
+
+
+    .logo{
+     
+     max-width: 25%;
+      height: auto;
+   
+    }
+
+  
+   .navbar{
+    float: right;
+    width: 100%;
+   }
+ 
+ 
+   
+ .mission_statement{
+  padding: 12rem;
+   box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1);
+   border-radius: 10px;
+   background-color: #579ebe;
+   text-align: center;
+
+
+ }
+.content{
+    padding: 3rem;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1);
+    
+    border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content2{
+
+    padding: 3rem;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1);
+    flex-direction: row;
+    border-radius: 10px;
+   display: flex;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contain_btn{
+      
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+ .video{
+   
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 10px;
+    height: 30rem;
+
+ }
+ .card{
+    display: grid;
+     padding: 2rem;
+   transform:  200ms ease-in;
+   display: inline-grid;
+   
+    
+    
+ }
+ .card_contaner{
+    box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1) !important;
+    border-radius: 10px !important;
+    padding: 3rem;
+ 
+ }
+
+
+ .img{
+   max-width: 50%;
+   height: auto;
+   
+
+ }
+
+
+.btn{
+   
+   box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1) !important;
+   text-align: center;
+
+
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.footer{
+   padding: 2rem;
+   display:inline-flex
+   
+  
+}
+
+.footer> div{
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  margin-left: 12rem;
+  position:relative;
+  font-size:x-small ;
+ 
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+a:link {
+   text-decoration: none;
+   color: gray ;
+ }
+ 
+ a:visited {
+   text-decoration: none;
+ }
+ 
+ a:hover, a:active {
+   border-bottom: 0.02rem solid #579ebe ;
+
+ }
+
+
+
+
+
+

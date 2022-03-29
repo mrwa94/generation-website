@@ -1,12 +1,28 @@
 
+
+import React from 'react'
 import './App.css';
-import Navbar from './components/Navbar';
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Home } from './components/Home';
+import { BrowserRouter ,Router,Route } from 'react-router-dom';
+
+
+
 
 function App() {
   return (
     <>
-   <Navbar/>
+    <BrowserRouter>
+    
+    
+    </BrowserRouter>
+    <Home/>
+    
+    
     </>
+    
+    
   );
 }
 
