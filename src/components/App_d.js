@@ -1,7 +1,11 @@
 import React from 'react'
 import Footer from './Footer'
 import video from './video/Dummy.MP4'
-import { Card ,Button, CardImg } from 'react-bootstrap'
+import img1 from './images/trust.jpg'
+import img2 from './images/contracts.jpg'
+import img3 from './images/trading.jpg'
+
+import { Card ,Button,CardGroup } from 'react-bootstrap'
 
 const App_d = () => {
   return (
@@ -22,60 +26,50 @@ const App_d = () => {
      </div>
      </section>
 
-     <section className='mission_statement' >
-      
-       <Card  className=' card_contaner text-center  my-4 mx-3 '   style={{ width: '100' }}>
-   <CardImg> </CardImg>
- <Card.Body>
+   
+     <section className='mission_statement text-center' >
+       
+       <h1>The REgen Difference</h1>
+           <CardGroup>
+           <Card  className=' card_contaner2  my-4 mx-4 '  >
+           <Card.Img 
+              className='img-thumbnail showcase '
+               variant="top" src={img1} />
+        <Card.Body>
+          <Card.Text>
+          Create trust in a trustless world
+          </Card.Text>
+         
+        </Card.Body>
+       </Card>
+       <Card  className=' card_contaner2  my-3 mx-3  '  >
+       <Card.Img 
+              className='img-thumbnail showcase '
+               variant="top" src={img2} />   
+        <Card.Body>
+          <Card.Text>
+          Smart Contracts Provide Instant Escrow Services, Traceability and Auditability
+          </Card.Text>
+         
+        </Card.Body>
+       </Card>
+       
+       <Card  className=' card_contaner2  my-3 mx-3 '  >
+       <Card.Img 
+              className='img-thumbnail showcase '
+               variant="top" src={img3} />  
+        <Card.Body>
+          <Card.Text>
+          Buy & Sell Hydrogen Resources Available Now or in the Future
+          </Card.Text>
+         
+        </Card.Body>
+       </Card>
+           </CardGroup>
+     
+    </section>
+    
   
-   <Card.Text>
-    showcase one
-   </Card.Text>
-  
- </Card.Body>
-</Card>
-<Card  className=' card_contaner text-center  my-4 mx-3 '   style={{ width: '100' }}>
- <Card.Body>
-   <Card.Text>
-    showcase two
-   </Card.Text>
- </Card.Body>
-</Card>
-
-<Card  className=' card_contaner text-center  my-4 mx-3 '   style={{ width: '100' }}>
- <Card.Body>
-   <Card.Text>
-    showcase three
-   </Card.Text>
- </Card.Body>
-</Card>
-
-
-<div className='contain_btn'>
-<Button className='btn' size="lg" variant="btn btn-outline-light" >Learn more</Button>{
-
-}
-</div>
-
-
-
-  </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <Footer/>
     </div>
   )

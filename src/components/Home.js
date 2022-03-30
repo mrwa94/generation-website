@@ -1,12 +1,23 @@
 import React from 'react'
-import { Container , Row ,Col ,Card ,Button ,CardGroup} from 'react-bootstrap'
+import { Container , Row ,Col ,Card ,Button ,CardGroup, CardImg} from 'react-bootstrap'
 
 import video from './video/Dummy.MP4'
-import img1 from './images/ecosystem.png'
-import img2 from './images/planet-earth.png'
+import img1 from './images/energy payments.jpg'
+import img2 from './images/Evenergy.JPG'
 import img3 from './images/Hydrogen.jpeg'
 import img4 from './images/Hydrogen2.JPG'
+import img5 from './images/digital_transparency.jpg'
+import img6 from './images/digital_financing.jpg'
 import Footer from './Footer'
+
+
+
+const handleClick = ()=> {
+
+
+}
+
+
 
 
 
@@ -19,7 +30,7 @@ export const Home = () => {
      <Container >
    <Row className='mission_statement'>
     <Col> 
-    <p>Our Mission</p>
+    <h3>Our Mission </h3>
     "At REgeneration Energy, we understand the critical role Hydrogen and other new energy resources play for our future energy needs. We provide end-to-end digital blockchain-based services for new energy ecosystems, bringing the energy industry into the Web 3.0 era.
 
 Our goals? 
@@ -70,10 +81,7 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
  
    <Card.Title>Siller</Card.Title>
    
-   <Card.Text>
-     Some quick example text to build on the card title and make up the bulk of
-     the card's content.
-   </Card.Text>
+  
    <Button variant="primary">Learn more..</Button>
  </Card.Body>
 </Card>
@@ -82,11 +90,10 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
 
  <Card.Body>
    <Card.Title>Buyer</Card.Title>
-   <Card.Text>
-     Some quick example text to build on the card title and make up the bulk of
-     the card's content.
-   </Card.Text>
-   <Button variant="primary">Learn more..</Button>
+   
+   <Button 
+   onClick={handleClick}
+   variant="primary">Learn more..</Button>
  </Card.Body>
 </Card>
 
@@ -100,54 +107,20 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
 
      <section className='content' >
      <div >
+         <h3 className='text-center'>Our Partners</h3>
      <Container >
-   <Row className=''>
+   <Row className='text-center'>
     <Col>
-    <img src={img1}
-    className = 'img'
-    />
-    </Col>
-    <Col>
-    <img src={img2}
-    className = 'img'
-    />
-    </Col>
-    <Col>
-    <img src={img1}
-    className = 'img'
-    />
-    </Col>
-
-    <Col>
-    <img src={img1}
-    className = 'img'
-    />
+           <a  href="https://evenergy.network/">
+           <img 
+            src={img2} 
+          
+            >
+              </img></a>
     </Col>
     
-
-  </Row>
-  <Row className=''>
-    <Col>
-    <img src={img1}
-    className = 'img'
-    />
-    </Col>
-    <Col>
-    <img src={img2}
-    className = 'img'
-    />
-    </Col>
-    <Col>
-    <img src={img1}
-    className = 'img'
-    />
-    </Col>
-
-    <Col>
-    <img src={img1}
-    className = 'img'
-    />
-    </Col>
+   
+   
     
 
   </Row>
@@ -156,34 +129,47 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
      </div>
      </section>
 
-
-     <section className='mission_statement' >
-      
-       <Card  className=' card_contaner text-center  my-4 mx-3 '   style={{ width: '100' }}>
- 
- <Card.Body>
-  
-   <Card.Text>
-    showcase one
-   </Card.Text>
-  
- </Card.Body>
-</Card>
-<Card  className=' card_contaner text-center  my-4 mx-3 '   style={{ width: '100' }}>
- <Card.Body>
-   <Card.Text>
-    showcase two
-   </Card.Text>
- </Card.Body>
-</Card>
-
-<Card  className=' card_contaner text-center  my-4 mx-3 '   style={{ width: '100' }}>
- <Card.Body>
-   <Card.Text>
-    showcase three
-   </Card.Text>
- </Card.Body>
-</Card>
+     
+     <section className='mission_statement text-center' >
+       
+     <h1>The REgen Difference</h1>
+         <CardGroup>
+         <Card  className=' card_contaner2  my-4 mx-4 '  >
+         <Card.Img 
+            className='img-thumbnail showcase '
+             variant="top" src={img1} />
+      <Card.Body>
+        <Card.Text>
+        Settle Energy Payments in Minutes, not Days
+        </Card.Text>
+       
+      </Card.Body>
+     </Card>
+     <Card  className=' card_contaner2  my-3 mx-3  '  >
+     <Card.Img 
+            className='img-thumbnail showcase '
+             variant="top" src={img5} />   
+      <Card.Body>
+        <Card.Text>
+        End to End Transparency - From Auction to Delivery
+        </Card.Text>
+       
+      </Card.Body>
+     </Card>
+     
+     <Card  className=' card_contaner2  my-3 mx-3 '  >
+     <Card.Img 
+            className='img-thumbnail showcase '
+             variant="top" src={img6} />  
+      <Card.Body>
+        <Card.Text>
+        Financing Options in Markets with Limited Instruments
+        </Card.Text>
+       
+      </Card.Body>
+     </Card>
+         </CardGroup>
+   
 
 
 <div className='contain_btn'>
@@ -215,8 +201,7 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
        
    </div>
         
-  
-          
+      
     </>
   )
 }

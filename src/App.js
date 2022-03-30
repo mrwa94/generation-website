@@ -5,7 +5,7 @@ import './App.css';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Home } from './components/Home';
-import { BrowserRouter ,Router,Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router,Route, Routes, Switch } from 'react-router-dom';
 import logo from './components/images/loogo.PNG'
 import { HashLink as Link } from 'react-router-hash-link'
 import { Navbar } from 'react-bootstrap'
@@ -25,7 +25,7 @@ function App() {
   return (
    
      <>
-     <BrowserRouter>
+     <Router>
      <Navbar class = "navbar"  >
     
     <nav className="navbar   ">
@@ -85,10 +85,23 @@ function App() {
     
     </div>
      </Navbar>
-     </BrowserRouter>
+    
+
+     <Routes>
+     <Route path="/Home" element={<Home/>}/>
+     <Route path="/App_d" element={<App_d/>}/>
+     </Routes>
+    </Router>
+
+   
+
 
      
-     <App_d/>
+     
+
+     
+     
+     
 
      
       

@@ -22,11 +22,12 @@
  
    
  .mission_statement{
-  padding: 12rem;
+  
    box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1);
    border-radius: 10px;
    background-color: #579ebe;
    text-align: center;
+   padding: 1rem;
 
 
  }
@@ -81,9 +82,21 @@
     box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1) !important;
     border-radius: 10px !important;
     padding: 3rem;
- 
+  
+   
  }
 
+
+ .card_contaner2{
+   box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1) !important;
+   border-radius: 10px !important;
+   padding: 3rem;
+   
+ 
+   
+   
+
+}
 
  .img{
    max-width: 50%;
@@ -137,6 +150,11 @@ a:link {
 
  }
 
+ .showcase{
+height: 15rem !important;
+width: 21rem !important;
+  
+ }
 
 
 
