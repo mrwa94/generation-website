@@ -1,17 +1,29 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import Footer from './Footer'
 import video from './video/Dummy.MP4'
 import img1 from './images/trust.jpg'
 import img2 from './images/contracts.jpg'
 import img3 from './images/trading.jpg'
+import Aos from 'aos';
 
 import { Card ,Button,CardGroup } from 'react-bootstrap'
 
 const App_d = () => {
+
+
+  useEffect( () => {
+    Aos.init();
+
+} , [])
+
+
   return (
     <div id='dapp_id'>
-    <section >
-     <div className='content'>
+    <section  >
+     <div className='content'
+     data-aos="fade-up"
+     data-aos-duration="3000"
+     >
   
     <p>The REgeneration marketplace</p>
     <video className='video'
@@ -27,11 +39,15 @@ const App_d = () => {
      </section>
 
    
-     <section className='mission_statement text-center' >
+     <section
+     
+     className='mission_statement text-center' >
        
-       <h1>The REgen Difference</h1>
+       <h1 className='text-color'>The REgen Difference</h1>
            <CardGroup>
-           <Card  className=' card_contaner2  my-4 mx-4 '  >
+           <Card  className=' card_contaner2  my-4 mx-4 ' 
+           data-aos="fade-up"
+           data-aos-duration="3000" >
            <Card.Img 
               className='img-thumbnail showcase '
                variant="top" src={img1} />
@@ -42,7 +58,10 @@ const App_d = () => {
          
         </Card.Body>
        </Card>
-       <Card  className=' card_contaner2  my-3 mx-3  '  >
+       <Card 
+       data-aos="fade-up"
+       data-aos-duration="3000"
+        className=' card_contaner2  my-3 mx-3  '  >
        <Card.Img 
               className='img-thumbnail showcase '
                variant="top" src={img2} />   
@@ -54,7 +73,10 @@ const App_d = () => {
         </Card.Body>
        </Card>
        
-       <Card  className=' card_contaner2  my-3 mx-3 '  >
+       <Card 
+       data-aos="fade-up"
+       data-aos-duration="3000"
+        className=' card_contaner2  my-3 mx-3 '  >
        <Card.Img 
               className='img-thumbnail showcase '
                variant="top" src={img3} />  

@@ -1,5 +1,7 @@
-import React from 'react'
+import React , {useEffect}  from 'react'
+import { useNavigate } from "react-router-dom"
 import { Container , Row ,Col ,Card ,Button ,CardGroup, CardImg} from 'react-bootstrap'
+
 
 import video from './video/Dummy.MP4'
 import img1 from './images/energy payments.jpg'
@@ -9,48 +11,83 @@ import img4 from './images/Hydrogen2.JPG'
 import img5 from './images/digital_transparency.jpg'
 import img6 from './images/digital_financing.jpg'
 import Footer from './Footer'
-
-
-
-const handleClick = ()=> {
-
-
-}
-
-
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 export const Home = () => {
+
+
+        let navigate = useNavigate(); 
+        const routeChange = () =>{ 
+          let path="/App_d"; 
+          navigate(path);
+        }
+
+        let navigate2 = useNavigate();
+        const routeChange2 = () => {
+          let path= "/Buyer";
+          navigate(path);
+        }
+        let navigate3 = useNavigate();
+        const routeChange3 = () => {
+          let path = "/Siller";
+          navigate(path);
+        }
+        let navigate4 = useNavigate();
+        const routeChange4 = () => {
+          let path = "/Contact";
+          navigate(path);
+        }
+
+      useEffect( () => {
+          Aos.init();
+
+      } , [])
+
   return (
       <>
-   <div id='home_id'> 
+
+   <div> 
    <section >
-     <div >
-     <Container >
-   <Row className='mission_statement'>
-    <Col> 
-    <h3>Our Mission </h3>
-    "At REgeneration Energy, we understand the critical role Hydrogen and other new energy resources play for our future energy needs. We provide end-to-end digital blockchain-based services for new energy ecosystems, bringing the energy industry into the Web 3.0 era.
+    
+     <div className='text-color'
+    data-aos="fade-up"
+ data-aos-duration="3000">
+    <h3  className='mt-3 padding'>Our Mission </h3>
+    <p className='mt-3 padding'>
+    "At REgeneration Energy, we understand the critical role Hydrogen and other new energy resources play for our future energy needs.<br/> 
+    We provide end-to-end digital blockchain-based services for new energy ecosystems, bringing the energy industry into the Web 3.0 era.<br/>
 
-Our goals? 
+    </p>
 
-To democratize energy, making it accessible for all stakeholders involved and reducing barriers to entry
+    </div>
+    <div 
+    data-aos="fade-up"
+ data-aos-duration="3000"
+ className='text-center content ' > 
 
-To decentralize energy, so that we can do away with one homogenous marketplace and instead create localized clusters that make sense for their regions.
+    <h3  className='mt-3  '>Our goals?</h3>
 
-To drive affordability, providing digital services, sustainable financing and localized markets to projects and purchasers. Thus accelerating ecosystem growth.
+<p className='mt-3 padding'>
+To democratize energy, making it accessible for all stakeholders involved and reducing barriers to entry 
 
-To demonstrate transparency and efficacy, in an industry that is usually driven by secrecy and slower technological uptake. 
+To decentralize energy, <br/>
+so that we can do away with one homogenous marketplace and instead create localized clusters that make sense for their regions. <br/>
 
-To decouple new energy industries like Hydrogen from traditional financial and trading systems via Web 3.0
+To drive affordability, providing digital services, sustainable financing and localized markets to projects and purchasers. <br/>
+Thus accelerating ecosystem growth.
 
-
+To demonstrate transparency and efficacy,in an industry that is usually driven by secrecy and slower <br/>technological uptake.
+in an industry that is usually driven by secrecy and slower <br/> technological uptake.To 
+decouple new energy industries like Hydrogen from traditional financial and trading systems via Web 3.0 <br/>
 
 At REgeneration, we believe in a better tomorrow, fueled by abundant energy resources that can be utilized by all."
-</Col>
-  </Row>
-</Container>
+
+
+</p>
+
+
 
      </div>
      </section>
@@ -58,7 +95,7 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
      <section >
      <div className='content'>
   
-    <p>Why REgeneration?</p>
+    <h3 className='mt-3' > Why REgeneration?</h3>
     <video className='video'
     src={video}
     alt = "Your browser does not support the video tag."
@@ -71,28 +108,35 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
      </div>
      </section>
 
-     <section className=' '>
-       <div className='card  '>
-       <CardGroup className=' my-4  mx-4  '> 
+     <section className=''>
+       <div
+       className='card  '>
+       <CardGroup className=' my-4  mx-4  mission_statement '> 
        
-       <Card  className=' card_contaner text-center  my-4 mx-3 '   style={{ width: '20rem' }}>
+       <Card data-aos="fade-up"
+     data-aos-duration="3000"
+        className=' card_contaner text-center  my-4 mx-3 '   style={{ width: '20rem' }}>
        <Card.Img className='rounded ' variant="top" src={img3} />
  <Card.Body>
  
    <Card.Title>Siller</Card.Title>
    
   
-   <Button variant="primary">Learn more..</Button>
+   <Button variant="primary"
+   onClick={routeChange3}
+   >Learn more..</Button>
  </Card.Body>
 </Card>
-<Card   className='card_contaner text-center my-4 mx-4  '      style={{ width: '20rem' }}>
+<Card  data-aos="fade-up"
+     data-aos-duration="3000"
+ className='card_contaner text-center my-4 mx-4  '      style={{ width: '20rem' }}>
 <Card.Img className='rounded ' variant="top" src={img4} />
 
  <Card.Body>
    <Card.Title>Buyer</Card.Title>
    
    <Button 
-   onClick={handleClick}
+   onClick={routeChange2}
    variant="primary">Learn more..</Button>
  </Card.Body>
 </Card>
@@ -105,9 +149,12 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
      </section>
 
 
-     <section className='content' >
-     <div >
-         <h3 className='text-center'>Our Partners</h3>
+     <section 
+     data-aos="fade-up"
+     data-aos-duration="3000"
+     className='content' >
+     <div  >
+         <h3 className='text-center mt-3'>Our Partners</h3>
      <Container >
    <Row className='text-center'>
     <Col>
@@ -118,10 +165,6 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
             >
               </img></a>
     </Col>
-    
-   
-   
-    
 
   </Row>
 </Container>
@@ -132,9 +175,12 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
      
      <section className='mission_statement text-center' >
        
-     <h1>The REgen Difference</h1>
+     <h1 className='mt-3 text-color'>The REgen Difference</h1>
          <CardGroup>
-         <Card  className=' card_contaner2  my-4 mx-4 '  >
+         <Card 
+         data-aos="fade-up"
+         data-aos-duration="3000"
+          className=' card_contaner2  my-4 mx-4 '  >
          <Card.Img 
             className='img-thumbnail showcase '
              variant="top" src={img1} />
@@ -145,7 +191,10 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
        
       </Card.Body>
      </Card>
-     <Card  className=' card_contaner2  my-3 mx-3  '  >
+     <Card 
+     data-aos="fade-up"
+     data-aos-duration="3000"
+      className=' card_contaner2  my-3 mx-3  '  >
      <Card.Img 
             className='img-thumbnail showcase '
              variant="top" src={img5} />   
@@ -157,7 +206,10 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
       </Card.Body>
      </Card>
      
-     <Card  className=' card_contaner2  my-3 mx-3 '  >
+     <Card 
+     data-aos="fade-up"
+     data-aos-duration="3000"
+      className=' card_contaner2  my-3 mx-3 '  >
      <Card.Img 
             className='img-thumbnail showcase '
              variant="top" src={img6} />  
@@ -173,9 +225,12 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
 
 
 <div className='contain_btn'>
-<Button className='btn' size="lg" variant="btn btn-outline-light" >Learn more</Button>{
-
-}
+<Button className='btn' size="lg"
+ variant="btn btn-outline-light"
+ onClick={routeChange}
+ >
+ Learn more</Button>
+   
 </div>
 
 
@@ -184,15 +239,21 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
 
 
         <section className='content'>
-          <h1 className='text-center'> 
+        
+          <h1 className='text-center mt-3'
+           data-aos="fade-up"
+           data-aos-duration="3000"
+          > 
           
             Ready to get started ? <br/>
             Contact Us
 
           </h1>
-          <Button className='btn' size="lg" variant="outline-primary" >Contact Us</Button>{
-
-}
+          <Button
+           data-aos="fade-up"
+           data-aos-duration="3000" className='btn' size="lg"
+          onClick={routeChange4}
+           variant="outline-primary" >Contact Us</Button>
 
         </section>
 

@@ -1,6 +1,5 @@
-
- *{
-    font-family: "Open Sans", sans-serif;
+*{
+    font-family: "Montserrat Classic", "Roboto";
     padding: 0;
     margin: 0;
  }
@@ -15,38 +14,46 @@
 
   
    .navbar{
-    float: right;
-    width: 100%;
+    float: right !important;
+    
+  
    }
  
- 
+ .text-color{
+     color: #f8f9fd !important;
+ }
+ .bg_navbar{
+     background-color: #0077B6 !important;
+ }
    
  .mission_statement{
   
    box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1);
-   border-radius: 10px;
-   background-color: #579ebe;
+   background-image: linear-gradient(#023047,#0077B6);
    text-align: center;
-   padding: 1rem;
+   padding: 10rem;
+  
+ 
 
 
  }
+ 
 .content{
-    padding: 3rem;
+    padding: 10rem;
     box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1);
-    
     border-radius: 10px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   margin-top: 12px;
    
   
 }
 
 .content2{
 
-    padding: 3rem;
+  padding: 10rem;
     box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1);
     flex-direction: row;
     border-radius: 10px;
@@ -111,10 +118,13 @@
    box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1) !important;
    text-align: center;
 
-
-
-
 }
+
+
+.buyer{
+    margin-top: 30rem !important;
+padding-top: 30rem;}
+ 
 
 
 
@@ -127,36 +137,32 @@
 
 .footer> div{
 
-  display: flex;
-  flex-direction: row;
-  margin-left: 12rem;
-  position:relative;
-  font-size:x-small ;
- 
-}
-
-
-a:link {
-   text-decoration: none;
-   color: gray ;
- }
- 
- a:visited {
-   text-decoration: none;
- }
- 
- a:hover, a:active {
-   border-bottom: 0.02rem solid #579ebe ;
-
- }
-
- .showcase{
-height: 15rem !important;
-width: 21rem !important;
+    display: flex;
+    flex-direction: row;
+    margin-left: 12rem;
+    position:relative;
+    font-size:x-small ;
+   
+  }
   
- }
-
-
-
-
-
+  
+  a:link {
+     text-decoration: none;
+     color: gray !important ;
+   }
+   
+   a:visited {
+     text-decoration: none !important;
+   }
+   
+   a:hover, a:active {
+     border-bottom: 0.02rem solid #579ebe ;
+  
+   }
+  
+   .showcase{
+  height: 15rem !important;
+  width: 21rem !important;
+    
+   }
+  

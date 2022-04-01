@@ -8,17 +8,13 @@ import { Home } from './components/Home';
 import { BrowserRouter as Router,Route, Routes, Switch } from 'react-router-dom';
 import logo from './components/images/loogo.PNG'
 import { HashLink as Link } from 'react-router-hash-link'
-import { Navbar } from 'react-bootstrap'
+import { Navbar , Nav  } from 'react-bootstrap'
 import App_d from './components/App_d';
-
-
-
-
-
-
-
-
-
+import Buyer from './components/Buyer'; 
+import Siller from './components/Siller';
+import Parte from './components/Parte';
+import About_us from './components/About_us';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -26,93 +22,44 @@ function App() {
    
      <>
      <Router>
-     <Navbar class = "navbar"  >
-    
-    <nav className="navbar   ">
-      <div className="container ">
-        <a className="navbar-brand img" href="#">
+     <Navbar   fixed="top" expand="lg"className='bg_navbar '>
+    <Navbar.Brand >
+    <a className="navbar-brand img" href="/Home">
            <img className='logo' 
             src={logo} alt= "logo"
            
             >
               </img></a>
-      
+    </Navbar.Brand>
+    <Navbar.Toggle  aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse  id="basic-navbar-nav">
+      <Nav className="justify-content-end flex-grow-1 pe-3 ">
+        <Nav.Link as={Link}  to ='/Home'>Home</Nav.Link>
+        <Nav.Link as={Link} to ='/App_d'  >dApp</Nav.Link>
+        <Nav.Link as = {Link} to ='/Siller'>Seller</Nav.Link>
+        <Nav.Link as = {Link} to ='/Siller'>Buyer</Nav.Link>
+        <Nav.Link as = {Link} to ='/Siller'>Partners</Nav.Link>
+        <Nav.Link as = {Link} to ='/Siller'>About us </Nav.Link>
+        <Nav.Link as = {Link} to ='/Siller'>Contact</Nav.Link>
+       
         
-        <div className="navbar_div" id="navbarSupportedContent">
-          <ul className="navbar-nav ">
-            <li className="nav-item">
-            <Link  aria-current ="page"  to ='/Home' className='nav-link active' > Home </Link>
-            
-            </li>
-            <li className="nav-item">
-            
-              <Link   to ='/App_d' className='nav-link active' >dapp </Link>
-            
-            </li>
-    
-            <li className="nav-item">
-        
-              <Link to ='#'   className='nav-link active'> Seller </Link>
-           
-                    </li>
-            <li>
-            
-              <Link   to ='#' className='nav-link active' >Buyer </Link>
-            
-            </li>
-            <li>
-            
-              <Link   to ='#' className='nav-link active' >Partners </Link>
-            
-            </li>
-            <li>
-            
-            <Link   to ='#' className='nav-link active' >About us </Link>
-          
-          </li>
-          <li>
-            
-            <Link   to ='#' className='nav-link active' >Contact </Link>
-            
-          
-          </li>
-          </ul>
-        
-        </div>
-      </div>
-    </nav>
-    <div>
-    
-    </div>
-     </Navbar>
-    
-
+      </Nav>
+    </Navbar.Collapse>
+</Navbar>
      <Routes>
+     <Route path="/" element={<Home/>}/>
      <Route path="/Home" element={<Home/>}/>
      <Route path="/App_d" element={<App_d/>}/>
+     <Route path="/Siller" element={<Siller/>}/>
+     <Route path="/Buyer" element={<Buyer/>}/>
+     <Route path = "/About_us" element = {<About_us/>}/>
+     <Route path = "/Contact" element = {<Contact/>}/>
+     <Route path = "/Parte" element = {<Parte/>}/>
+     
+ 
      </Routes>
     </Router>
 
-   
-
-
-     
-     
-
-     
-     
-     
-
-     
-      
-      
-      
-
- 
-  
-  
-   
-    
     </>
     
     

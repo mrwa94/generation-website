@@ -2,20 +2,21 @@
 import React from 'react'
 
 
+
 const Footer = () => {
   return (
     <div>
 
-<footer className=' footer  ' >
+<footer  className=' footer   ' >
 
-<p>2021 © REgeneration Energy  <br/>
+<p className='mt-3'>2021 © REgeneration Energy  <br/>
 All rights reserved
 </p>
 
 <div className='d-grid gap-3' >
-<a src = ''  href="#"> Home </a>
-<a src = '' href="#"> About us</a>
-<a src = ''href="#" > contact</a>
+<a  src = '' href='Home'> Home </a>
+<a src = '' href="About_us"> About us</a>
+<a src = ''href="Contact" > contact</a>
 </div>
 
 <div className='d-grid gap-3' >
