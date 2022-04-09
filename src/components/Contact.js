@@ -3,7 +3,7 @@ import Footer from './Footer'
 
 const Contact = () => {
   return (
-    <div className=' '>C
+    <div className=''>C
     ontact
          <Footer/>
     </div>
