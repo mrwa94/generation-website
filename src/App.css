@@ -4,27 +4,70 @@
     margin: 0;
  }
 
-
+ .bg_navbar{
+    background-color: #0077B6 !important;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0.0, 0.1);
+   
+}
+  
     .logo{
      
-     max-width: 25%;
+     max-width: 45%;
       height: auto;
    
     }
 
   
-   .navbar{
-    float: right !important;
+   .padding{
     
-  
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+ }
+
+ .padding_2{
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+ }
+
+   .size_font{
+    font-size: 70px !important;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0.0, 0.1);
+   
    }
  
+  
+  .sec_color{
+
+      background-image: linear-gradient(#0077b6,#40c5ef);
+  }
+
+  
  .text-color{
      color: #f8f9fd !important;
  }
- .bg_navbar{
-     background-color: #0077B6 !important;
- }
+
+.section_color{
+    background-color: #023047;
+}
+
+.div_goals{
+   
+    padding: 2rem;
+    padding-left: 12em;
+   
+
+}
+
+.sec_postion{
+    display: flex;
+    text-align: center !important;
+    
+    
+}
+
+
+
    
  .mission_statement{
   

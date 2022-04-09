@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom"
 import { Container , Row ,Col ,Card ,Button ,CardGroup, CardImg} from 'react-bootstrap'
 
 
-import video from './video/Dummy.MP4'
+import video from './video/video.webp'
 import img1 from './images/energy payments.jpg'
-import img2 from './images/Evenergy.JPG'
+import img2 from './images/Evenergy.jpg'
 import img3 from './images/Hydrogen.jpeg'
-import img4 from './images/Hydrogen2.JPG'
+import img4 from './images/contact.jpg'
 import img5 from './images/digital_transparency.jpg'
 import img6 from './images/digital_financing.jpg'
 import Footer from './Footer'
@@ -49,54 +49,14 @@ export const Home = () => {
       <>
 
    <div> 
-   <section >
-    
-     <div className='text-color'
-    data-aos="fade-up"
- data-aos-duration="3000">
-    <h3  className='mt-3 padding'>Our Mission </h3>
-    <p className='mt-3 padding'>
-    "At REgeneration Energy, we understand the critical role Hydrogen and other new energy resources play for our future energy needs.<br/> 
-    We provide end-to-end digital blockchain-based services for new energy ecosystems, bringing the energy industry into the Web 3.0 era.<br/>
-
-    </p>
-
-    </div>
-    <div 
-    data-aos="fade-up"
- data-aos-duration="3000"
- className='text-center content ' > 
-
-    <h3  className='mt-3  '>Our goals?</h3>
-
-<p className='mt-3 padding'>
-To democratize energy, making it accessible for all stakeholders involved and reducing barriers to entry 
-
-To decentralize energy, <br/>
-so that we can do away with one homogenous marketplace and instead create localized clusters that make sense for their regions. <br/>
-
-To drive affordability, providing digital services, sustainable financing and localized markets to projects and purchasers. <br/>
-Thus accelerating ecosystem growth.
-
-To demonstrate transparency and efficacy,in an industry that is usually driven by secrecy and slower <br/>technological uptake.
-in an industry that is usually driven by secrecy and slower <br/> technological uptake.To 
-decouple new energy industries like Hydrogen from traditional financial and trading systems via Web 3.0 <br/>
-
-At REgeneration, we believe in a better tomorrow, fueled by abundant energy resources that can be utilized by all."
+   <section  className='padding text-center sec_color text-color'>
+    <p className='size_font'>DEMOCRATIZING <br/>ENERGY </p>
+    <h3 className=''>Creating Trust in a Trustless Environment</h3>
+   </section>
 
 
-</p>
-
-
-
-     </div>
-     </section>
-
-     <section >
-     <div className='content'>
-  
-    <h3 className='mt-3' > Why REgeneration?</h3>
-    <video className='video'
+   <section>
+   <img 
     src={video}
     alt = "Your browser does not support the video tag."
     autoPlay
@@ -104,9 +64,169 @@ At REgeneration, we believe in a better tomorrow, fueled by abundant energy reso
     muted
     >
 
-    </video>
-     </div>
-     </section>
+    </img>
+
+   </section>
+
+   <section  className='padding text-center sec_color text-color'>
+    <p className='size_font'>Our Mission </p>
+    <h3 className=''>"At REgeneration Energy, we understand the critical <br/>
+                     role Hydrogen and other new energy resources play <br/>
+                     for our future energy needs. </h3>
+    <h3 className=''>We provide end-to-end digital blockchain-based <br/>
+                      services for new energy ecosystems, bringing the <br/>
+                      energy industry into the Web 3.0 era." </h3>
+   </section>
+
+    
+    <section className='section_color sec_postion'>
+    <img src= {img1}
+    width="50%" height="900" ></img>
+
+  <div className=' text-color div_goals ' > 
+   <h1 className=''>Our Goals?</h1>
+
+   <ui>
+    <li className='mt-3'>
+    To democratize energy, making it <br/> accessible for all stakeholders involved  <br/> and reducing barriers to entry
+    </li>
+    <li  className='mt-3'>To decentralize energy, so that we can<br/> do away with one homogenous<br/> marketplace and instead create <br/> localized clusters that make sense for <br/> their regions.</li>
+    <li  className='mt-3'> To drive affordability, providing digital<br/> services, sustainable financing and<br/> localized markets to projects and <br/> purchasers. Thus accelerating <br/> ecosystem growth.</li>
+    <li  className='mt-3'> To demonstrate transparency and<br/> efficacy, in an industry that is usually<br/>driven by secrecy and slower <br/>technological uptake. </li>
+    <li  className='mt-3'> To decouple new energy industries<br/> like Hydrogen from traditional<br/>financial and trading systems via Web <br/>3.0 </li>
+
+​ </ui>
+
+</div>
+ </section>
+ 
+
+
+ <section  className='padding text-center sec_color text-color'>
+    <h3  data-aos="fade-up"
+  >"At REgeneration, we believe in a better tomorrow,<br/> fueled by abundant energy resources that can be utilized by all." </h3>
+   
+   </section>
+
+
+
+
+
+   <section className=' sec_postion'>
+   <div className='  div_goals '> 
+   <h1 className='size_font text center mt-3'>Decentralized Application</h1>
+
+  <h3 className='mt-3'>I'm a paragraph. Click here to add your <br/>own text and edit me. It’s easy. Just click<br/> “Edit Text” or double click me to add<br/> your own content and make changes to<br/> the font. I’m a great place for you to tell <br/>a story and let your users know a little <br/>more about you.</h3>
+  <div className='padding_2'>
+  <Button className='bg_navbar '
+   onClick={routeChange3}
+   >Read more..</Button>
+
+  </div>
+ 
+</div>
+
+<div>
+<img src= {img2}
+width="700"
+ height="800" 
+ ></img>
+ 
+</div>
+ </section>
+
+   
+
+ <section className='sec_color text-color sec_postion '>
+    <img src= {img3}
+    width="740" height="900" ></img>
+
+  <div className='  div_goals padding_2   ' > 
+   <h1 className='mt-3'>How it works</h1>
+   <h3 className='padding_2 mt-3'>
+    
+
+I'm a paragraph. Click here to add your <br/> own text and edit me.
+ It’s easy. Just click<br/> “Edit Text” or double click me to add<br/>  your
+  own content and make changes to<br/>  the font. I’m a great place for you 
+  to tell<br/>  a story and let your users know a little<br/>  more about you.
+
+   </h3>
+
+   <div className='padding_2'>
+  <Button className='bg_navbar '
+   onClick={routeChange3}
+   >Read more..</Button>
+
+  </div>
+
+</div>
+ </section>
+ 
+
+
+
+ <section className='  sec_postion '>
+  
+  <div className='  div_goals padding_2   ' > 
+   <h1 className='mt-3'>About Us</h1>
+   <h3 className='padding_2 mt-3'>
+    
+   I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+
+   </h3>
+
+   <div className='padding_2'>
+  <Button className='bg_navbar '
+   onClick={routeChange3}
+   >Read more..</Button>
+
+  </div>
+
+</div>
+
+<img src= {img4}
+    width="700" height="800" ></img>
+ </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <img className='video'
+    src={video}
+    alt = "Your browser does not support the video tag."
+    autoPlay
+    loop
+    muted
+    >
+
+    </img>
 
      <section className=''>
        <div

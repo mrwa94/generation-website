@@ -6,7 +6,7 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Home } from './components/Home';
 import { BrowserRouter as Router,Route, Routes, Switch } from 'react-router-dom';
-import logo from './components/images/loogo.PNG'
+import logo from './components/images/logo.webp'
 import { HashLink as Link } from 'react-router-hash-link'
 import { Navbar , Nav  } from 'react-bootstrap'
 import App_d from './components/App_d';
@@ -28,19 +28,20 @@ function App() {
            <img className='logo' 
             src={logo} alt= "logo"
            
+           
             >
               </img></a>
     </Navbar.Brand>
     <Navbar.Toggle  aria-controls="basic-navbar-nav" />
     <Navbar.Collapse  id="basic-navbar-nav">
       <Nav className="justify-content-end flex-grow-1 pe-3 ">
-        <Nav.Link as={Link}  to ='/Home'>Home</Nav.Link>
-        <Nav.Link as={Link} to ='/App_d'  >dApp</Nav.Link>
-        <Nav.Link as = {Link} to ='/Siller'>Seller</Nav.Link>
-        <Nav.Link as = {Link} to ='/Siller'>Buyer</Nav.Link>
-        <Nav.Link as = {Link} to ='/Siller'>Partners</Nav.Link>
-        <Nav.Link as = {Link} to ='/Siller'>About us </Nav.Link>
-        <Nav.Link as = {Link} to ='/Siller'>Contact</Nav.Link>
+        <Nav.Link as={Link}  to ='/Home'>HOME</Nav.Link>
+        <Nav.Link as={Link} to ='/App_d'  >DAPP</Nav.Link>
+        <Nav.Link as = {Link} to ='/Siller'>HOW IT WORKS</Nav.Link>
+        <Nav.Link as = {Link} to ='/Siller'>ABOUT US</Nav.Link>
+        <Nav.Link as = {Link} to ='/Siller'>OUR ADVANTAGE</Nav.Link>
+        <Nav.Link as = {Link} to ='/Siller'>NEWS </Nav.Link>
+        <Nav.Link as = {Link} to ='/Siller'>CONTACT</Nav.Link>
        
         
       </Nav>
