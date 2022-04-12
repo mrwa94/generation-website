@@ -1,14 +1,15 @@
 import React , {useEffect}  from 'react'
 import { useNavigate } from "react-router-dom"
-import { Container , Row ,Col ,Card ,Button ,CardGroup, CardImg} from 'react-bootstrap'
+import { Container , Row ,Col ,Card ,Button ,Form, CardImg} from 'react-bootstrap'
 
 
 import video from './video/video.webp'
 import img1 from './images/energy payments.jpg'
-import img2 from './images/Evenergy.jpg'
+import img2 from './images/header.jpg'
+import img5 from './images/Evenergy.JPG'
 import img3 from './images/Hydrogen.jpeg'
 import img4 from './images/contact.jpg'
-import img5 from './images/digital_transparency.jpg'
+
 import img6 from './images/digital_financing.jpg'
 import Footer from './Footer'
 import Aos from 'aos';
@@ -189,193 +190,94 @@ I'm a paragraph. Click here to add your <br/> own text and edit me.
     width="700" height="800" ></img>
  </section>
   
+ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <img className='video'
-    src={video}
-    alt = "Your browser does not support the video tag."
-    autoPlay
-    loop
-    muted
-    >
-
-    </img>
-
-     <section className=''>
+     <section className='section_color '>
        <div
-       className='card  '>
-       <CardGroup className=' my-4  mx-4  mission_statement '> 
+       className=' padding_2 '>
+     
        
        <Card data-aos="fade-up"
      data-aos-duration="3000"
-        className=' card_contaner text-center  my-4 mx-3 '   style={{ width: '20rem' }}>
-       <Card.Img className='rounded ' variant="top" src={img3} />
+        className=' card_contaner text-center  my-4 mx-3 '   style={{ width: '35rem' }}>
+       
  <Card.Body>
  
-   <Card.Title>Siller</Card.Title>
-   
+   <Card.Title className='size_font'>Our Advantage</Card.Title>
+  <h2>"A different approach, using a new method of efficient sourcing." </h2>
+  <h5>- Nisha Ramesh, Founder & CEO</h5>
+  <h5 className='padding_2'>Financing Options in Markets with Limited Instruments.....</h5>
+  <h6>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</h6>
+
   
-   <Button variant="primary"
+   <Button className='bg_navbar' variant="primary"
    onClick={routeChange3}
-   >Learn more..</Button>
+   >Read more..</Button>
  </Card.Body>
 </Card>
-<Card  data-aos="fade-up"
-     data-aos-duration="3000"
- className='card_contaner text-center my-4 mx-4  '      style={{ width: '20rem' }}>
-<Card.Img className='rounded ' variant="top" src={img4} />
-
- <Card.Body>
-   <Card.Title>Buyer</Card.Title>
-   
-   <Button 
-   onClick={routeChange2}
-   variant="primary">Learn more..</Button>
- </Card.Body>
-</Card>
-
-       
-       </CardGroup>
-      
-       </div>
-
-     </section>
-
-
-     <section 
-     data-aos="fade-up"
-     data-aos-duration="3000"
-     className='content' >
-     <div  >
-         <h3 className='text-center mt-3'>Our Partners</h3>
-     <Container >
-   <Row className='text-center'>
-    <Col>
-           <a  href="https://evenergy.network/">
-           <img 
-            src={img2} 
-          
-            >
-              </img></a>
-    </Col>
-
-  </Row>
-</Container>
-
-     </div>
-     </section>
-
-     
-     <section className='mission_statement text-center' >
-       
-     <h1 className='mt-3 text-color'>The REgen Difference</h1>
-         <CardGroup>
-         <Card 
-         data-aos="fade-up"
-         data-aos-duration="3000"
-          className=' card_contaner2  my-4 mx-4 '  >
-         <Card.Img 
-            className='img-thumbnail showcase '
-             variant="top" src={img1} />
-      <Card.Body>
-        <Card.Text>
-        Settle Energy Payments in Minutes, not Days
-        </Card.Text>
-       
-      </Card.Body>
-     </Card>
-     <Card 
-     data-aos="fade-up"
-     data-aos-duration="3000"
-      className=' card_contaner2  my-3 mx-3  '  >
-     <Card.Img 
-            className='img-thumbnail showcase '
-             variant="top" src={img5} />   
-      <Card.Body>
-        <Card.Text>
-        End to End Transparency - From Auction to Delivery
-        </Card.Text>
-       
-      </Card.Body>
-     </Card>
-     
-     <Card 
-     data-aos="fade-up"
-     data-aos-duration="3000"
-      className=' card_contaner2  my-3 mx-3 '  >
-     <Card.Img 
-            className='img-thumbnail showcase '
-             variant="top" src={img6} />  
-      <Card.Body>
-        <Card.Text>
-        Financing Options in Markets with Limited Instruments
-        </Card.Text>
-       
-      </Card.Body>
-     </Card>
-         </CardGroup>
-   
-
-
-<div className='contain_btn'>
-<Button className='btn' size="lg"
- variant="btn btn-outline-light"
- onClick={routeChange}
- >
- Learn more</Button>
-   
-</div>
+ </div>
+</section>
 
 
 
-  </section>
+
+<section className='sec_postion div_goals sec_color  padding_2'>
+  <div>
+  <h1 className=''>Our Main<br/> Partner</h1>
+  <p>
+  Click here to add your own content<br/> and customize the text. This is a great <br/>place to tell a story about your<br/> company and let your users know a<br/> little more about the company's<br/> history, the team's background, or any<br/> other information you'd like to share.<br/> Just click "Edit Text" to get started.
+  </p>
+
+
+  </div>
+  
+  <div className='div_right'>
+    <img src={img5}
+     width="400"
+     height="100" >
+    </img>
+    <p className='mt-3'>
+    Evenergy’s mission is to energise <br/>growth of Renewable Energy (RE) in<br/> Asia by partnering with players of all <br/>sizes across the RE value chain.<br/> Evenergy provides a credible and<br/> widely accessible source of RECs (via<br/> our blockchain enabled trading <br/>platform) that can be purchased for<br/> corporate sustainability objectives. 
+
+    </p>
+
+  </div>
+  
+</section>
+
+
 
 
         <section className='content'>
         
           <h1 className='text-center mt-3'
-           data-aos="fade-up"
-           data-aos-duration="3000"
+      
           > 
           
             Ready to get started ? <br/>
             Contact Us
 
           </h1>
-          <Button
-           data-aos="fade-up"
-           data-aos-duration="3000" className='btn' size="lg"
+   <Form>
+  <label>Name</label>
+  <input placeholder='Enter Your Name' type='text' className='feild'></input>
+  <label>Email</label>
+  <input placeholder='Enter Your Email' type='email' className='feild'></input>
+  <label>Phone</label>
+  <input placeholder='Enter Your Phone' type='text'  className='feild'></input>
+  <label>Message</label>
+  <textarea   className='feild_area'></textarea>
+ 
+  </Form>
+  <div className='padding_2'>
+  <Button
+           className='btn ' size="lg"
           onClick={routeChange4}
-           variant="outline-primary" >Contact Us</Button>
+          >Send </Button>
 
-        </section>
+  </div>
+ 
+   </section>
 
      <Footer/>
 

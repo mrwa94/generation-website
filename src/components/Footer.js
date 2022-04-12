@@ -1,39 +1,57 @@
 
 import React from 'react'
-
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 
 const Footer = () => {
   return (
-    <div>
+  
+    <div className='footer'>
+      <div className='container_footer'>
+        <div className='row_footer'>
+          <div className='col_footer'>
+            <h4>REgeneration </h4>
+            <h6>500 Terry Francois St San <br/>Francisco, CA 94158</h6>
+            </div>
 
-<footer  className=' footer   ' >
 
-<p className='mt-3'>2021 © REgeneration Energy  <br/>
-All rights reserved
-</p>
+           <div className='col_footer'>
+            <h6>Tel: 123-456-7890</h6>
+            <h6> Email: info@mysite.com</h6>
+             </div>
 
-<div className='d-grid gap-3' >
-<a  src = '' href='Home'> Home </a>
-<a src = '' href="About_us"> About us</a>
-<a src = ''href="Contact" > contact</a>
+           <div className='icon-footer'>
+           <a herf ='#' >   <i className='bi bi-linkedin'></i> </a>
+            <a herf ='#' >   <i className='bi bi-facebook'></i> </a>
+            <a herf ='#' >   <i className=' bi bi-twitter'></i> </a>
+            <a herf ='#' >   <i className='bi bi-instagram'></i> </a>
+            <h5 className='padding_2'>© 2022 REgeneration. </h5>
+            </div>
+
+
+
+            </div>
+              </div>
+     
+
+
+  
+
+
+
+
+
+
+
+
+
 </div>
 
-<div className='d-grid gap-3' >
-<a src = ''  href="#"> Twitter </a>
-<a src = ''href="#" > Linkedin</a>
-</div>
-
-<div className='d-grid gap-3' >
-<a src = '' href="#" > Privacy Policy </a>
-<a src = ''  href="#"> Terms Of service</a>
-</div>
 
 
 
-</footer>
 
-    </div>
+    
   )
 }
 
