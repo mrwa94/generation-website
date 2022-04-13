@@ -192,7 +192,7 @@ I'm a paragraph. Click here to add your <br/> own text and edit me.
   
  
 
-     <section className='section_color '>
+     <section className='section_color  '>
        <div
        className=' padding_2 '>
      
@@ -221,17 +221,18 @@ I'm a paragraph. Click here to add your <br/> own text and edit me.
 
 
 
-<section className='sec_postion div_goals sec_color  padding_2'>
+<section className=' sec_color text-center  text-color padding_2'>
   <div>
-  <h1 className=''>Our Main<br/> Partner</h1>
+  <h1 className=''>Our Main Partner</h1>
   <p>
   Click here to add your own content<br/> and customize the text. This is a great <br/>place to tell a story about your<br/> company and let your users know a<br/> little more about the company's<br/> history, the team's background, or any<br/> other information you'd like to share.<br/> Just click "Edit Text" to get started.
   </p>
 
 
   </div>
+  </section>
   
-  <div className='div_right'>
+  <div className='text-center padding_2'>
     <img src={img5}
      width="400"
      height="100" >
@@ -243,12 +244,14 @@ I'm a paragraph. Click here to add your <br/> own text and edit me.
 
   </div>
   
-</section>
 
 
 
 
-        <section className='content'>
+
+        <section className='content sec_color text-color '
+        data-aos="fade-up"
+        data-aos-duration="3000">
         
           <h1 className='text-center mt-3'
       
